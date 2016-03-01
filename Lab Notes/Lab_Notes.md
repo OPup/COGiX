@@ -6,7 +6,7 @@ The initial code for the pipelined vector dot product finder was run, giving the
 
 ![Image of First Gantt Chart](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/Lab_1_Gant_1.png)
 
-Then unrollinge:
+Then using the unrolling feature:
 
 ![Image of First Gantt Chart](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/Lab_1_Gant_2.png)
 
