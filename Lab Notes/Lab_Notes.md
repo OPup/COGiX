@@ -20,6 +20,11 @@ Now, creating data and control blocks, the data path is:
 
 ###Quartus II and FPGA
 
+Exporting the data path as Verilog code, and synthesisng this on Quartus II for the FPGA:
+
+![Image of Schematic](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/Lab_1_Schematic.png)
+
+
 
 
 
