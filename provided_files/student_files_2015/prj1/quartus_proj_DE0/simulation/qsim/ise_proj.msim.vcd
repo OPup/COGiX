@@ -1,0 +1,614 @@
+$comment
+	File created using the following command:
+		vcd file ise_proj.msim.vcd -direction
+$end
+$date
+	Tue Mar 01 15:31:45 2016
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module ise_proj_vlg_vec_tst $end
+$var reg 3 ! BUTTON [2:0] $end
+$var reg 1 " CLOCK_50 $end
+$var reg 1 # CLOCK_50_2 $end
+$var reg 1 $ PS2_MSCLK $end
+$var reg 1 % PS2_MSDAT $end
+$var reg 10 & SW [9:0] $end
+$var wire 1 ' HEX0_D [6] $end
+$var wire 1 ( HEX0_D [5] $end
+$var wire 1 ) HEX0_D [4] $end
+$var wire 1 * HEX0_D [3] $end
+$var wire 1 + HEX0_D [2] $end
+$var wire 1 , HEX0_D [1] $end
+$var wire 1 - HEX0_D [0] $end
+$var wire 1 . LEDG [9] $end
+$var wire 1 / LEDG [8] $end
+$var wire 1 0 LEDG [7] $end
+$var wire 1 1 LEDG [6] $end
+$var wire 1 2 LEDG [5] $end
+$var wire 1 3 LEDG [4] $end
+$var wire 1 4 LEDG [3] $end
+$var wire 1 5 LEDG [2] $end
+$var wire 1 6 LEDG [1] $end
+$var wire 1 7 LEDG [0] $end
+$var wire 1 8 VGA_B [3] $end
+$var wire 1 9 VGA_B [2] $end
+$var wire 1 : VGA_B [1] $end
+$var wire 1 ; VGA_B [0] $end
+$var wire 1 < VGA_BLANK $end
+$var wire 1 = VGA_CLK $end
+$var wire 1 > VGA_G [3] $end
+$var wire 1 ? VGA_G [2] $end
+$var wire 1 @ VGA_G [1] $end
+$var wire 1 A VGA_G [0] $end
+$var wire 1 B VGA_HS $end
+$var wire 1 C VGA_R [3] $end
+$var wire 1 D VGA_R [2] $end
+$var wire 1 E VGA_R [1] $end
+$var wire 1 F VGA_R [0] $end
+$var wire 1 G VGA_SYNC $end
+$var wire 1 H VGA_VS $end
+$var wire 1 I sampler $end
+$scope module i1 $end
+$var wire 1 J gnd $end
+$var wire 1 K vcc $end
+$var wire 1 L unknown $end
+$var tri1 1 M devclrn $end
+$var tri1 1 N devpor $end
+$var tri1 1 O devoe $end
+$var wire 1 P BUTTON[2]~input_o $end
+$var wire 1 Q BUTTON[1]~input_o $end
+$var wire 1 R BUTTON[0]~input_o $end
+$var wire 1 S SW[9]~input_o $end
+$var wire 1 T SW[8]~input_o $end
+$var wire 1 U SW[7]~input_o $end
+$var wire 1 V SW[6]~input_o $end
+$var wire 1 W SW[5]~input_o $end
+$var wire 1 X SW[4]~input_o $end
+$var wire 1 Y SW[3]~input_o $end
+$var wire 1 Z SW[2]~input_o $end
+$var wire 1 [ SW[1]~input_o $end
+$var wire 1 \ SW[0]~input_o $end
+$var wire 1 ] PS2_MSDAT~input_o $end
+$var wire 1 ^ PS2_MSCLK~input_o $end
+$var wire 1 _ CLOCK_50~input_o $end
+$var wire 1 ` CLOCK_50_2~input_o $end
+$var wire 1 a VGA_CLK~output_o $end
+$var wire 1 b VGA_SYNC~output_o $end
+$var wire 1 c VGA_BLANK~output_o $end
+$var wire 1 d VGA_VS~output_o $end
+$var wire 1 e VGA_HS~output_o $end
+$var wire 1 f HEX0_D[6]~output_o $end
+$var wire 1 g HEX0_D[5]~output_o $end
+$var wire 1 h HEX0_D[4]~output_o $end
+$var wire 1 i HEX0_D[3]~output_o $end
+$var wire 1 j HEX0_D[2]~output_o $end
+$var wire 1 k HEX0_D[1]~output_o $end
+$var wire 1 l HEX0_D[0]~output_o $end
+$var wire 1 m LEDG[9]~output_o $end
+$var wire 1 n LEDG[8]~output_o $end
+$var wire 1 o LEDG[7]~output_o $end
+$var wire 1 p LEDG[6]~output_o $end
+$var wire 1 q LEDG[5]~output_o $end
+$var wire 1 r LEDG[4]~output_o $end
+$var wire 1 s LEDG[3]~output_o $end
+$var wire 1 t LEDG[2]~output_o $end
+$var wire 1 u LEDG[1]~output_o $end
+$var wire 1 v LEDG[0]~output_o $end
+$var wire 1 w VGA_B[3]~output_o $end
+$var wire 1 x VGA_B[2]~output_o $end
+$var wire 1 y VGA_B[1]~output_o $end
+$var wire 1 z VGA_B[0]~output_o $end
+$var wire 1 { VGA_G[3]~output_o $end
+$var wire 1 | VGA_G[2]~output_o $end
+$var wire 1 } VGA_G[1]~output_o $end
+$var wire 1 ~ VGA_G[0]~output_o $end
+$var wire 1 !! VGA_R[3]~output_o $end
+$var wire 1 "! VGA_R[2]~output_o $end
+$var wire 1 #! VGA_R[1]~output_o $end
+$var wire 1 $! VGA_R[0]~output_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0xx !
+x"
+x#
+x$
+x%
+b1000100 &
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0;
+0:
+09
+08
+0<
+0=
+0A
+0@
+0?
+0>
+0B
+0F
+0E
+0D
+0C
+0G
+0H
+xI
+0J
+1K
+xL
+1M
+1N
+1O
+0P
+xQ
+xR
+0S
+0T
+0U
+1V
+0W
+0X
+0Y
+1Z
+0[
+0\
+x]
+x^
+x_
+x`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+$end
+#10000
+b1xx !
+1P
+0I
+#20000
+b0xx !
+0P
+1I
+#30000
+b1xx !
+1P
+0I
+#40000
+b0xx !
+0P
+1I
+#50000
+b1xx !
+1P
+0I
+#60000
+b0xx !
+0P
+1I
+#70000
+b1xx !
+1P
+0I
+#80000
+b0xx !
+0P
+1I
+#90000
+b1xx !
+1P
+0I
+#100000
+b0xx !
+0P
+1I
+#110000
+b1xx !
+1P
+0I
+#120000
+b0xx !
+0P
+1I
+#130000
+b1xx !
+1P
+0I
+#140000
+b0xx !
+0P
+1I
+#150000
+b1xx !
+1P
+0I
+#160000
+b0xx !
+0P
+1I
+#170000
+b1xx !
+1P
+0I
+#180000
+b0xx !
+0P
+1I
+#190000
+b1xx !
+1P
+0I
+#200000
+b0xx !
+0P
+1I
+#210000
+b1xx !
+1P
+0I
+#220000
+b0xx !
+0P
+1I
+#230000
+b1xx !
+1P
+0I
+#240000
+b0xx !
+0P
+1I
+#250000
+b1xx !
+1P
+0I
+#260000
+b0xx !
+0P
+1I
+#270000
+b1xx !
+1P
+0I
+#280000
+b0xx !
+0P
+1I
+#290000
+b1xx !
+1P
+0I
+#300000
+b0xx !
+0P
+1I
+#310000
+b1xx !
+1P
+0I
+#320000
+b0xx !
+0P
+1I
+#330000
+b1xx !
+1P
+0I
+#340000
+b0xx !
+0P
+1I
+#350000
+b1xx !
+1P
+0I
+#360000
+b0xx !
+0P
+1I
+#370000
+b1xx !
+1P
+0I
+#380000
+b0xx !
+0P
+1I
+#390000
+b1xx !
+1P
+0I
+#400000
+b0xx !
+0P
+1I
+#410000
+b1xx !
+1P
+0I
+#420000
+b0xx !
+0P
+1I
+#430000
+b1xx !
+1P
+0I
+#440000
+b0xx !
+0P
+1I
+#450000
+b1xx !
+1P
+0I
+#460000
+b0xx !
+0P
+1I
+#470000
+b1xx !
+1P
+0I
+#480000
+b0xx !
+0P
+1I
+#490000
+b1xx !
+1P
+0I
+#500000
+b0xx !
+0P
+1I
+#510000
+b1xx !
+1P
+0I
+#520000
+b0xx !
+0P
+1I
+#530000
+b1xx !
+1P
+0I
+#540000
+b0xx !
+0P
+1I
+#550000
+b1xx !
+1P
+0I
+#560000
+b0xx !
+0P
+1I
+#570000
+b1xx !
+1P
+0I
+#580000
+b0xx !
+0P
+1I
+#590000
+b1xx !
+1P
+0I
+#600000
+b0xx !
+0P
+1I
+#610000
+b1xx !
+1P
+0I
+#620000
+b0xx !
+0P
+1I
+#630000
+b1xx !
+1P
+0I
+#640000
+b0xx !
+0P
+1I
+#650000
+b1xx !
+1P
+0I
+#660000
+b0xx !
+0P
+1I
+#670000
+b1xx !
+1P
+0I
+#680000
+b0xx !
+0P
+1I
+#690000
+b1xx !
+1P
+0I
+#700000
+b0xx !
+0P
+1I
+#710000
+b1xx !
+1P
+0I
+#720000
+b0xx !
+0P
+1I
+#730000
+b1xx !
+1P
+0I
+#740000
+b0xx !
+0P
+1I
+#750000
+b1xx !
+1P
+0I
+#760000
+b0xx !
+0P
+1I
+#770000
+b1xx !
+1P
+0I
+#780000
+b0xx !
+0P
+1I
+#790000
+b1xx !
+1P
+0I
+#800000
+b0xx !
+0P
+1I
+#810000
+b1xx !
+1P
+0I
+#820000
+b0xx !
+0P
+1I
+#830000
+b1xx !
+1P
+0I
+#840000
+b0xx !
+0P
+1I
+#850000
+b1xx !
+1P
+0I
+#860000
+b0xx !
+0P
+1I
+#870000
+b1xx !
+1P
+0I
+#880000
+b0xx !
+0P
+1I
+#890000
+b1xx !
+1P
+0I
+#900000
+b0xx !
+0P
+1I
+#910000
+b1xx !
+1P
+0I
+#920000
+b0xx !
+0P
+1I
+#930000
+b1xx !
+1P
+0I
+#940000
+b0xx !
+0P
+1I
+#950000
+b1xx !
+1P
+0I
+#960000
+b0xx !
+0P
+1I
+#970000
+b1xx !
+1P
+0I
+#980000
+b0xx !
+0P
+1I
+#990000
+b1xx !
+1P
+0I
+#1000000

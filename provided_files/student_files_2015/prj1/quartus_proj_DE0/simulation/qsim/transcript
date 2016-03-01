@@ -1,0 +1,25 @@
+# do ise_proj.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ise_proj
+# 
+# Top level modules:
+# 	ise_proj
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ise_proj_vlg_sample_tst
+# -- Compiling module ise_proj_vlg_check_tst
+# -- Compiling module ise_proj_vlg_vec_tst
+# 
+# Top level modules:
+# 	ise_proj_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.ise_proj_vlg_vec_tst 
+# Loading work.ise_proj_vlg_vec_tst
+# Loading work.ise_proj
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading work.ise_proj_vlg_sample_tst
+# Loading work.ise_proj_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : ise_proj.vt(364)
+#    Time: 1 us  Iteration: 0  Instance: /ise_proj_vlg_vec_tst/tb_out

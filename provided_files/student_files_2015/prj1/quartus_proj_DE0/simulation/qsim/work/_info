@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\CatapultCLab\COGiX\provided_files\student_files_2015\prj1\quartus_proj_DE0\simulation\qsim
+vise_proj
+Z1 !s100 8IU6coVBmS>__8SWHFoSZ1
+Z2 IN@l:cEQHnRj]agMC`O7UB0
+Z3 VoPY`YMakI:ElFz2:9::hN2
+Z4 dH:\CatapultCLab\COGiX\provided_files\student_files_2015\prj1\quartus_proj_DE0\simulation\qsim
+Z5 w1456846300
+Z6 8ise_proj.vo
+Z7 Fise_proj.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ise_proj.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1456846303.382000
+Z12 !s107 ise_proj.vo|
+!s101 -O0
+vise_proj_vlg_check_tst
+!i10b 1
+Z13 !s100 i][=0f4>_a8;hK3MKFQlh0
+Z14 I5@]OKA@No:ND?U4iVSO6i0
+Z15 VRd8[C9FS1V:_Oi2n@RP:N3
+R4
+Z16 w1456846299
+Z17 8ise_proj.vt
+Z18 Fise_proj.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z19 !s108 1456846303.893000
+Z20 !s107 ise_proj.vt|
+Z21 !s90 -work|work|ise_proj.vt|
+!s101 -O0
+R10
+vise_proj_vlg_sample_tst
+!i10b 1
+Z22 !s100 e@YoeO2EboKR8CX:=ja1e0
+Z23 ID>5zUB3>ZCfo<zLC?@ol41
+Z24 VNannaARk49KEj_=Cm=TjJ3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vise_proj_vlg_vec_tst
+!i10b 1
+!s100 65ZIa]QFJ10^EX^Z3XfCW2
+IS@@Pko:n;CoIiOO6JI2Tz0
+Z25 VG@I307gDTEBMnE1H2S@oA1
+R4
+R16
+R17
+R18
+Z26 L0 368
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

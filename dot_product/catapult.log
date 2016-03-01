@@ -525,3 +525,7 @@ flow run /Schematic/view ./schematic.nlv -state datapath
 flow run /Schematic/view ./schematic.nlv -state criticalpath
 flow run /Schematic/view ./schematic.nlv -state criticalmap
 flow run /Schematic/view ./schematic.nlv -state datapath
+flow run /Schematic/view ./schematic.nlv -state rtl
+flow run /Schematic/view ./schematic.nlv -state datapath
+flow run /Schematic/view ./schematic.nlv -state rtl
+flow run /Schematic/view ./schematic.nlv -state datapath
