@@ -2,7 +2,7 @@
 
 ##Lab 1: Vector Dot Product
 
-###Catapult c
+###Catapult C
 
 The initial code for the pipelined vector dot product finder was run, giving the following Gantt Chart:
 
@@ -19,5 +19,7 @@ Now, creating data and control blocks, the data path is:
 ![Image of Data Path](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/Lab_1_Data_Path_1.png)
 
 ###Quartus II and FPGA
+
+
 
 
