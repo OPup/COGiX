@@ -54,4 +54,4 @@ directive set /dot_product/input_a -WORD_WIDTH 8
 directive set /dot_product/core/MAC -UNROLL no
 directive set /dot_product/core/main -PIPELINE_INIT_INTERVAL 1
 go architect
-go allocate
+go extract

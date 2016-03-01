@@ -429,3 +429,99 @@ go allocate
 # Resource allocation and scheduling done. (CRAAS-2)
 # Netlist written to file 'schedule.gnt' (NET-4)
 # Info: Completed transformation 'allocate' on solution 'dot_product.v4': elapsed time 0.08 seconds, memory usage 174380kB, peak memory usage 223724kB (SOL-9)
+options set Output OutputVHDL false
+# false
+options set Output OutputVerilog true
+# true
+go extract
+# Info: Starting transformation 'schedule' on solution 'dot_product.v4' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/dot_product/core' (CRAAS-1)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'output:rsc' (SCHD-15)
+# Global signal 'input_a:rsc.z' added to design 'dot_product' for component 'input_a:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'input_b:rsc.z' added to design 'dot_product' for component 'input_b:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'output:rsc.z' added to design 'dot_product' for component 'output:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/dot_product': (Total ops = 49, Real ops = 11, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 36, Real ops = 10, Vars = 16) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core/core': (Total ops = 30, Real ops = 10, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core/core': (Total ops = 17, Real ops = 10, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 10, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 10, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core/core': (Total ops = 17, Real ops = 10, Vars = 4) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 10, Vars = 19) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 10, Vars = 10) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Error: Streamed resource 'input_a:rsc' must be mapped to an interface synthesis component having an enable handshake signal (i.e. mgc_in_wire_en/mgc_out_stdreg_en).
+# Error: Streamed resource 'input_b:rsc' must be mapped to an interface synthesis component having an enable handshake signal (i.e. mgc_in_wire_en/mgc_out_stdreg_en).
+# Info: Wrote wave database file to H:/CatapultCLab/COGiX/dot_product/dot_product/dot_product.v4/scverify/ccs_wave_signals.dat
+# Makefile for Cycle Verilog output 'cycle.v' vs Untimed C++ written to file 'scverify/Verify_cycle_v_msim.mk'
+# Info: Completed transformation 'schedule' on solution 'dot_product.v4': elapsed time 1.34 seconds, memory usage 177820kB, peak memory usage 223724kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'dot_product.v4' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/dot_product': (Total ops = 43, Real ops = 13, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 31, Real ops = 13, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 43, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 31, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'dot_product.v4': elapsed time 0.11 seconds, memory usage 177820kB, peak memory usage 223724kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'dot_product.v4' (SOL-8)
+# Warning: Reassigned operation MAC:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(4,0,3,0,4) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,0,3) (ASG-1)
+# Info: Optimizing partition '/dot_product': (Total ops = 35, Real ops = 14, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 23, Real ops = 14, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 23) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 32) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 23) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/dot_product': (Total ops = 36, Real ops = 14, Vars = 21) (SOL-10)
+# Info: Optimizing partition '/dot_product/dot_product:core': (Total ops = 24, Real ops = 14, Vars = 12) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: H:/CatapultCLab/COGiX/dot_product/dot_product/dot_product.v4/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file 'scverify/Verify_rtl_v_msim.mk'
+# Synthesis timing script written to file './scverify/mapped.psrv_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'mapped.psrv'
+# Makefile for Mapped Verilog output 'rtl.v' vs Untimed C++ written to file 'scverify/Verify_mapped_v_msim.mk'
+# Synthesis timing script written to file './scverify/gate.psrv_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'gate.psrv'
+# Makefile for Gate Verilog output 'gate.v' vs Untimed C++ written to file 'scverify/Verify_gate_v_msim.mk'
+# Info: Completed transformation 'extract' on solution 'dot_product.v4': elapsed time 2.59 seconds, memory usage 178480kB, peak memory usage 223724kB (SOL-9)
+go instance
+flow run /Schematic/view ./schematic.nlv -state rtl
+flow run /Schematic/view ./schematic.nlv -state datapath
+flow run /Schematic/view ./schematic.nlv -state criticalpath
+flow run /Schematic/view ./schematic.nlv -state datapath
+flow run /Schematic/view ./schematic.nlv -state rtl
+flow run /Schematic/view ./schematic.nlv -state datapath
+flow run /Schematic/view ./schematic.nlv -state criticalpath
+flow run /Schematic/view ./schematic.nlv -state criticalmap
+flow run /Schematic/view ./schematic.nlv -state datapath
