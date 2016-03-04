@@ -59,7 +59,7 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
     // shifts pixels from KERNEL_WIDTH rows and keeps KERNEL_WIDTH columns (KERNEL_WIDTHxKERNEL_WIDTH pixels stored)
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,false>, KERNEL_WIDTH> regs;
     int i;
-
+    
     FRAME: for(int p = 0; p < NUM_PIXELS; p++) {
 		// init
 		red = 0; 
@@ -112,11 +112,6 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 	    
     }
 }
-     
-     
-     
-     
-     
      
 #else    
 // display input  (test only)

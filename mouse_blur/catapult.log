@@ -13,28 +13,11 @@
 //  This version may only be used for academic purposes.  Some optimizations 
 //  are disabled, so results obtained from this version may be sub-optimal.
 //  
-//  Start time Fri Mar 04 14:26:37 2016
+//  Start time Fri Mar 04 15:46:52 2016
 # -------------------------------------------------
-# Logging session transcript to file "C:\Users\oh1015\AppData\Local\Temp\log488824ca5d0.0"
+# Logging session transcript to file "C:\Users\oh1015\AppData\Local\Temp\log820023996c0.0"
 # Loading options from registry.
 # Warning: set_working_dir: Directory 'C:/Windows' not writable, using C:/Users/oh1015/AppData/Local/Temp
-project new -name Mouse_Blur
-set_working_dir //icnas3.cc.ic.ac.uk/oh1015/COGiX
-set_working_dir //icnas3.cc.ic.ac.uk/oh1015/COGiX/mouse_blur
-solution file add ../provided_files/student_files_2015/prj2/catapult_proj/vga_mouse/vga_mouse_square.c
-# /INPUTFILES/1
-go analyze
-# Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\COGiX\mouse_blur\Mouse_Blur'. (PRJ-1)
+project load //icnas3.cc.ic.ac.uk/oh1015/COGiX/mouse_blur/Mouse_Blur/SIF/project.sif
 # Moving session transcript to file "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\mouse_blur\catapult.log"
-# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
-# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_mouse\vga_mouse_square.c} (CIN-69)
-# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
-# $PROJECT_HOME/../provided_files/student_files_2015/prj2/catapult_proj/vga_mouse/vga_mouse_square.c(45): Pragma 'hls_design<top>' detected on routine 'vga_mouse_square' (CIN-6)
-# Source file analysis completed (CIN-68)
-# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 0.89 seconds, memory usage 146536kB, peak memory usage 176492kB (SOL-9)
-directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND sync -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
-# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND sync -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME {} -ENABLE_ACTIVE high}}
-directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
-# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
-directive set -DESIGN_HIERARCHY vga_mouse_square
-# /DESIGN_HIERARCHY vga_mouse_square
+quit -f

@@ -1,0 +1,14 @@
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:mul RESOURCE_NAME FRAME:mgc_Altera-Cyclone-III-6_beh_psr.mgc_mul(4,0,6,0,10)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:mul#2 RESOURCE_NAME FRAME:mgc_Altera-Cyclone-III-6_beh_psr.mgc_mul(4,0,6,0,10)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:mul#1 RESOURCE_NAME FRAME:mgc_Altera-Cyclone-III-6_beh_psr.mgc_mul(4,0,6,0,10)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:acc#41 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,5,1,7)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/ACC2:acc RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,5,1,7)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/ACC1:acc RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(5,0,5,1,7)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:acc#50 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/SHIFT:if:else:else:else:acc RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:acc#23 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)#1
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/ACC1:acc#16 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)#1
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/SHIFT:acc#1 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)#1
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/ACC2:acc#4 RESOURCE_NAME mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,2,1,5)#1
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:acc#43 RESOURCE_NAME FRAME:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(10,0,7,1,11)
+directive set /mean_vga/mean_vga:core/mean_vga:core:conc/FRAME:acc#26 RESOURCE_NAME FRAME:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(10,0,7,1,11)
