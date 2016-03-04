@@ -31,3 +31,10 @@ Exporting the data path as Verilog code, and synthesisng this on Quartus II for 
 We found the notes a bit vague following from the first experiment so we just tried to compile the provided quartus project and it worked.
 
 ![Image of working demo](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/working.jpg)
+
+After playing around and taking many selfies, it was time to get back to work.
+
+###VGA Blur
+We first of all opened MatLab to verify that the code for the blur worked. Here are the images of the graphs that we managed to take and the source code:
+
+![Image of MatLab graphs](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/Lab_2_Matlab_graphs.png)
