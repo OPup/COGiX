@@ -30,4 +30,4 @@ Exporting the data path as Verilog code, and synthesisng this on Quartus II for 
 ###VGA Mouse
 We found the notes a bit vague following from the first experiment so we just tried to compile the provided quartus project and it worked.
 
-![Image of Schematic](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/working.png)
+![Image of working demo](https://github.com/OPup/COGiX/blob/master/Lab%20Notes/screenshots/working.jpg)
