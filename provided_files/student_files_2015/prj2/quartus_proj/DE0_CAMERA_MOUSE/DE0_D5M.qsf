@@ -544,10 +544,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RXD
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RTS
 
 
-set_global_assignment -name VERILOG_FILE ../../../../../vga_blur/vga_blur/mean_vga.v3/rtl_mgc_ioport_v2001.v
-set_global_assignment -name VERILOG_FILE ../../../../../vga_blur/vga_blur/mean_vga.v3/rtl_mgc_ioport.v
-set_global_assignment -name VERILOG_FILE ../../../../../vga_blur/vga_blur/mean_vga.v3/rtl.v
-set_global_assignment -name VERILOG_FILE catapult_ip/blur3x3/rtl.v
+set_global_assignment -name VERILOG_FILE catapult_ip/greyscale/Catapult_1/mean_vga.v4/rtl.v
 set_global_assignment -name VERILOG_FILE V/ps2.v
 set_global_assignment -name SOURCE_FILE Sdram_Control_4Port/Sdram_Params.h
 set_global_assignment -name VERILOG_FILE Sdram_Control_4Port/command.v

@@ -44,8 +44,6 @@
 #include "shift_class.h" 
 
 
-
-
 #pragma hls_design top
 void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
@@ -65,6 +63,7 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		red = 0; 
 		green = 0; 
 		blue = 0;
+		
 		RESET: for(i = 0; i < KERNEL_WIDTH; i++) {
 			r[i] = 0;
 			g[i] = 0;
@@ -73,12 +72,24 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 	    
 		// shift input data in the filter fifo
 		regs << vin[p]; // advance the pointer address by the pixel number (testbench/simulation only)
+		
+		red = (vin[p].slc<COLOUR_WL>(2*COLOUR_WL));
+        green = (vin[p].slc<COLOUR_WL>(COLOUR_WL));
+        blue = (vin[p].slc<COLOUR_WL>(0));		
+		red = ((red + blue + green)/3);
+		
+		for(i = 0; i < KERNEL_WIDTH; i++){
+		    
+
 		// accumulate
+		/*
 		ACC1: for(i = 0; i < KERNEL_WIDTH; i++) {
 			// current line
 			r[0] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL));
 			g[0] += (regs[i].slc<COLOUR_WL>(COLOUR_WL));
 			b[0] += (regs[i].slc<COLOUR_WL>(0));
+			temp = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL) + regs[i].slc<COLOUR_WL>(COLOUR_WL) + regs[i].slc<COLOUR_WL>(0) )/3
+			red[0]+= temp //multiply by array mask and define 
 			// the line before ...
 			r[1] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL));
 			g[1] += (regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL));
@@ -106,11 +117,15 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		red /= KERNEL_NUMEL;
 		green /= KERNEL_NUMEL;
 		blue /= KERNEL_NUMEL;
+	    */
+	    
+	    
+}	    
 	    
 		// group the RGB components into a single signal
-		vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue);
-	    
-    }
+		vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)red) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)red);
+	    //vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue); 
+   // }
 }
      
 #else    
@@ -126,6 +141,6 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
     }
 }
 #endif
-
+}
 
 // end of file

@@ -1,0 +1,279 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 oh1015@EEWS104A-004 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Fri Mar 11 14:19:06 2016
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\oh1015\AppData\Local\Temp\log7460d7abcc.0"
+# Loading options from registry.
+project load //icnas3.cc.ic.ac.uk/oh1015/COGiX/provided_files/student_files_2015/prj2/quartus_proj/DE0_CAMERA_MOUSE/catapult_ip/greyscale/Catapult_1
+# Moving session transcript to file "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\quartus_proj\DE0_CAMERA_MOUSE\catapult_ip\greyscale\catapult.log"
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# File '$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c' saved
+# File '$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c} -updated
+# Info: Branching solution 'solution.v1' at state 'new' (PRJ-2)
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(146): $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(146): expected a "}" (CRD-67)
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): variable "garray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): variable "barray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(146): $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(146): expected a "}" (CRD-67)
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): variable "garray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): variable "barray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+# File '$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): variable "garray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): variable "barray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(47): Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 3.18 seconds, memory usage 165228kB, peak memory usage 293676kB (SOL-9)
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): $PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): nested comment is not allowed (CRD-9)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): variable "garray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# Warning: $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): $PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): variable "barray" is used before its value is set (CRD-549)
+# Warning:           detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(47): Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 3.00 seconds, memory usage 167060kB, peak memory usage 293676kB (SOL-9)
+# Info: Starting transformation 'compile' on solution 'solution.v2' (SOL-8)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Found top design routine 'mean_vga' specified by directive (CIN-52)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Synthesizing routine 'mean_vga' (CIN-13)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Inlining routine 'mean_vga' (CIN-14)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/shift_class.h(13): Inlining member function 'shift_class<ac_int<150, false>, 5>::shift_class' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/shift_class.h(32): Inlining member function 'shift_class<ac_int<150, false>, 5>::operator<<' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Optimizing block '/mean_vga' ... (CIN-4)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Inout port 'vin' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Inout port 'vout' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/mean_vga': (Total ops = 208, Real ops = 47, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 208, Real ops = 47, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 208, Real ops = 44, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 208, Real ops = 44, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 208, Real ops = 44, Vars = 66) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 208, Real ops = 44, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 151, Real ops = 37, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 151, Real ops = 37, Vars = 35) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 151, Real ops = 37, Vars = 37) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 151, Real ops = 37, Vars = 37) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 159, Real ops = 37, Vars = 51) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 114, Real ops = 27, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 114, Real ops = 27, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 114, Real ops = 27, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 114, Real ops = 27, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 114, Real ops = 27, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 114, Real ops = 27, Vars = 8) (SOL-10)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(67): Loop '/mean_vga/core/RESET' iterated at most 5 times. (LOOP-2)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(81): Loop '/mean_vga/core/FRAME:for' iterated at most 5 times. (LOOP-2)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(61): Loop '/mean_vga/core/FRAME' iterated at most 1 times. (LOOP-2)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 99, Real ops = 18, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 99, Real ops = 18, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 99, Real ops = 18, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 99, Real ops = 18, Vars = 7) (SOL-10)
+# Design 'mean_vga' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'mean_vga.v4': elapsed time 1.25 seconds, memory usage 175816kB, peak memory usage 293676kB (SOL-9)
+go extract
+# Info: Starting transformation 'architect' on solution 'mean_vga.v4' (SOL-8)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Loop '/mean_vga/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): I/O-Port inferred - resource 'vin:rsc' (from var: vin) mapped to 'mgc_ioport.mgc_in_wire' (size: 150). (MEM-2)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): I/O-Port inferred - resource 'vout:rsc' (from var: vout) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 30). (MEM-2)
+# Info: Optimizing partition '/mean_vga': (Total ops = 105, Real ops = 19, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 105, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 104, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 101, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 101, Real ops = 19, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 102, Real ops = 19, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 102, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 102, Real ops = 19, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 102, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 102, Real ops = 19, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 102, Real ops = 19, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 102, Real ops = 19, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 127, Real ops = 19, Vars = 20) (SOL-10)
+# Info: Optimizing partition '/mean_vga/core': (Total ops = 102, Real ops = 19, Vars = 5) (SOL-10)
+# Design 'mean_vga' contains '35' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'mean_vga.v4': elapsed time 2.89 seconds, memory usage 176308kB, peak memory usage 293676kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'mean_vga.v4' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/mean_vga/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Prescheduled LOOP 'main' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/../../../../catapult_proj/vga_blur/blur.c(48): Prescheduled SEQUENTIAL 'core' (total length 2 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 153.15, 0.00, 153.15 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP 'main': Latency = 1, Area (Datapath, Register, Total) = 145.43, 0.00, 145.43 (CRAAS-10)
+# Info: Optimized LOOP 'main': Latency = 1, Area (Datapath, Register, Total) = 144.75, 0.00, 144.75 (CRAAS-10)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 144.75, 0.00, 144.75 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'mean_vga.v4': elapsed time 0.17 seconds, memory usage 176452kB, peak memory usage 293676kB (SOL-9)
+# Info: Starting transformation 'schedule' on solution 'mean_vga.v4' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/mean_vga/core' (CRAAS-1)
+# Global signal 'vin:rsc.z' added to design 'mean_vga' for component 'vin:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'vout:rsc.z' added to design 'mean_vga' for component 'vout:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/mean_vga': (Total ops = 171, Real ops = 36, Vars = 18) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 161, Real ops = 35, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/core': (Total ops = 156, Real ops = 35, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/core': (Total ops = 145, Real ops = 33, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 159, Real ops = 33, Vars = 17) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 150, Real ops = 33, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/core': (Total ops = 145, Real ops = 33, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 159, Real ops = 33, Vars = 17) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 150, Real ops = 33, Vars = 10) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'mean_vga.v4': elapsed time 0.66 seconds, memory usage 182248kB, peak memory usage 293676kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'mean_vga.v4' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/mean_vga': (Total ops = 204, Real ops = 36, Vars = 134) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 195, Real ops = 36, Vars = 127) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 277, Real ops = 35, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 268, Real ops = 35, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'mean_vga.v4': elapsed time 0.25 seconds, memory usage 182628kB, peak memory usage 293676kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'mean_vga.v4' (SOL-8)
+# Warning: Reassigned operation FRAME:acc#10:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(11,0,10,1,12) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(10,0,10,1,12) (ASG-1)
+# Info: Optimizing partition '/mean_vga': (Total ops = 170, Real ops = 36, Vars = 163) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 161, Real ops = 36, Vars = 156) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 170, Real ops = 36, Vars = 163) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 161, Real ops = 36, Vars = 156) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/mean_vga': (Total ops = 170, Real ops = 36, Vars = 163) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 161, Real ops = 36, Vars = 156) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga': (Total ops = 158, Real ops = 34, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core': (Total ops = 149, Real ops = 34, Vars = 15) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm': (Total ops = 6, Real ops = 2, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/mean_vga/mean_vga:core/mean_vga:core:fsm/mean_vga:core:fsm': (Total ops = 1, Real ops = 1, Vars = 1) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: //icnas3.cc.ic.ac.uk/oh1015/COGiX/provided_files/student_files_2015/prj2/quartus_proj/DE0_CAMERA_MOUSE/catapult_ip/greyscale/Catapult_1/mean_vga.v4/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'mean_vga.v4': elapsed time 2.79 seconds, memory usage 182932kB, peak memory usage 293676kB (SOL-9)
