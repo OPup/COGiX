@@ -43,12 +43,10 @@
 // shift_class: page 119 HLS Blue Book
 #include "shift_class.h" 
 
-
 #pragma hls_design top
 void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
     ac_int<16, false> red, green, blue, r[KERNEL_WIDTH], g[KERNEL_WIDTH], b[KERNEL_WIDTH];
-    
 
 // #if 1: use filter
 // #if 0: copy input to output bypassing filter
@@ -57,6 +55,16 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
     // shifts pixels from KERNEL_WIDTH rows and keeps KERNEL_WIDTH columns (KERNEL_WIDTHxKERNEL_WIDTH pixels stored)
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,false>, KERNEL_WIDTH> regs;
     int i;
+    
+    int j;
+    int k;
+    int sobel_kernal[KERNEL_WIDTH][KERNEL_WIDTH];
+    for(j = 0; j< KERNEL_WIDTH; j++){
+        for(k = 0; k < KERNEL_WIDTH; k++){
+            sobel_kernal[j][k] = -1;
+        }
+    }
+    sobel_kernal[2][2] = 24;
     
     FRAME: for(int p = 0; p < NUM_PIXELS; p++) {
 		// init
