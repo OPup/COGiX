@@ -8,3 +8,24 @@ Branching solution 'solution.v1' at state 'new' (PRJ-2)
 Branching solution 'solution.v1' at state 'new' (PRJ-2)
 Branching solution 'solution.v2' at state 'new' (PRJ-2)
 Branching solution 'solution.v2' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp} {\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v2': elapsed time 3.10 seconds, memory usage 167100kB, peak memory usage 295492kB (SOL-9)
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(262): nested comment is not allowed (CRD-9)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(263): nested comment is not allowed (CRD-9)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(264): nested comment is not allowed (CRD-9)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/tb_blur.cpp(265): nested comment is not allowed (CRD-9)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\tb_blur.cpp"
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1699): variable "garray" is used before its value is set (CRD-549)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"
+$PROJECT_HOME/../../../../catapult_proj/vga_blur/bmp_io.cpp(1700): variable "barray" is used before its value is set (CRD-549)
+          detected during compilation of secondary translation unit "\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\catapult_proj\vga_blur\bmp_io.cpp"

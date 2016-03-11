@@ -1188,7 +1188,7 @@ applicable agreement for further details.
 (symbol
 	(rect 1704 1080 1944 1192)
 	(text "mean_vga" (rect 5 0 56 12)(font "Arial" ))
-	(text "inst1" (rect 8 96 31 108)(font "Arial" ))
+	(text "inst11" (rect 8 96 37 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1682,11 +1682,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2304 1112)
-	(pt 1944 1112)
-	(bus)
-)
-(connector
 	(text "VGA_CLK" (rect 1626 1112 1675 1124)(font "Arial" ))
 	(pt 1616 1128)
 	(pt 1704 1128)
@@ -1704,6 +1699,11 @@ applicable agreement for further details.
 	(text "RGB_TAP[149..0]" (rect 1602 1096 1689 1108)(font "Arial" ))
 	(pt 1704 1112)
 	(pt 1592 1112)
+	(bus)
+)
+(connector
+	(pt 1944 1112)
+	(pt 2304 1112)
 	(bus)
 )
 (junction (pt 1008 944))

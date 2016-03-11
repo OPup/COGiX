@@ -47,6 +47,7 @@
 void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
     ac_int<16, false> red, green, blue, r[KERNEL_WIDTH], g[KERNEL_WIDTH], b[KERNEL_WIDTH];
+    ac_int<21, false> grey;
 
 // #if 1: use filter
 // #if 0: copy input to output bypassing filter
@@ -71,6 +72,7 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		red = 0; 
 		green = 0; 
 		blue = 0;
+		grey = 0;
 		
 		RESET: for(i = 0; i < KERNEL_WIDTH; i++) {
 			r[i] = 0;
@@ -80,17 +82,44 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 	    
 		// shift input data in the filter fifo
 		regs << vin[p]; // advance the pointer address by the pixel number (testbench/simulation only)
+
+		ACC1: for(i = 0; i < KERNEL_WIDTH; i++){
+		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL));
+            green = (regs[i].slc<COLOUR_WL>(COLOUR_WL));
+            blue = (regs[i].slc<COLOUR_WL>(0));		
+	        //grey += ((red + blue + green)/3);       
+	        grey += ((red + blue + green)/3)*sobel_kernal[0][i];
+	        
+	        red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL));
+            green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL));
+            blue = (regs[i].slc<COLOUR_WL>(0 + PIXEL_WL));		
+	       //grey += ((red + blue + green)/3);
+	        grey += ((red + blue + green)/3)*sobel_kernal[1][i];
 		
-		red = (vin[p].slc<COLOUR_WL>(2*COLOUR_WL));
-        green = (vin[p].slc<COLOUR_WL>(COLOUR_WL));
-        blue = (vin[p].slc<COLOUR_WL>(0));		
-		red = ((red + blue + green)/3);
+		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL));
+			green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL)) ;
+			blue = (regs[i].slc<COLOUR_WL>(0 + 2*PIXEL_WL)) ;
+		    //grey += ((red + blue + green)/3);
+		    grey += ((red + blue + green)/3)*sobel_kernal[2][i];
+		      
+		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 3*PIXEL_WL));
+			green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + 3*PIXEL_WL)) ;
+			blue = (regs[i].slc<COLOUR_WL>(0 + 3*PIXEL_WL)) ;
+		    //grey += ((red + blue + green)/3);
+		    grey += ((red + blue + green)/3)*sobel_kernal[3][i];
+		    
+		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 4*PIXEL_WL));
+			green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + 4*PIXEL_WL)) ;
+			blue = (regs[i].slc<COLOUR_WL>(0 + 4*PIXEL_WL)) ;
+	    	   //grey += ((red + blue + green)/3);
+	    	   grey += ((red + blue + green)/3)*sobel_kernal[4][i];
+		}
+		    
 		
-		for(i = 0; i < KERNEL_WIDTH; i++){
 		    
 
 		// accumulate
-		/*
+        /*
 		ACC1: for(i = 0; i < KERNEL_WIDTH; i++) {
 			// current line
 			r[0] += (regs[i].slc<COLOUR_WL>(2*COLOUR_WL));
@@ -125,14 +154,11 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		red /= KERNEL_NUMEL;
 		green /= KERNEL_NUMEL;
 		blue /= KERNEL_NUMEL;
-	    */
 	    
-	    
-}	    
+	    */ 
 	    
 		// group the RGB components into a single signal
-		vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)red) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)red);
-	    //vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue); 
+		vout[p] = ((((ac_int<PIXEL_WL, false>)grey) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)grey) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)grey);
    // }
 }
      
