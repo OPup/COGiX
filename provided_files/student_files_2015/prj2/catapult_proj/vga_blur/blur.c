@@ -46,8 +46,8 @@
 #pragma hls_design top
 void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
-    ac_int<16, false> red, green, blue, r[KERNEL_WIDTH], g[KERNEL_WIDTH], b[KERNEL_WIDTH];
-    ac_int<21, false> grey;
+    ac_int<16, true> red, green, blue, r[KERNEL_WIDTH], g[KERNEL_WIDTH], b[KERNEL_WIDTH];
+    ac_int<22, true> grey;
 
 // #if 1: use filter
 // #if 0: copy input to output bypassing filter
@@ -93,12 +93,12 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 	        red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL));
             green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + PIXEL_WL));
             blue = (regs[i].slc<COLOUR_WL>(0 + PIXEL_WL));		
-	       //grey += ((red + blue + green)/3);
+	        //grey += ((red + blue + green)/3);
 	        grey += ((red + blue + green)/3)*sobel_kernal[1][i];
 		
 		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + 2*PIXEL_WL));
-			green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL)) ;
-			blue = (regs[i].slc<COLOUR_WL>(0 + 2*PIXEL_WL)) ;
+			green = (regs[i].slc<COLOUR_WL>(COLOUR_WL + 2*PIXEL_WL));
+			blue = (regs[i].slc<COLOUR_WL>(0 + 2*PIXEL_WL));
 		    //grey += ((red + blue + green)/3);
 		    grey += ((red + blue + green)/3)*sobel_kernal[2][i];
 		      
@@ -113,10 +113,7 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 			blue = (regs[i].slc<COLOUR_WL>(0 + 4*PIXEL_WL)) ;
 	    	   //grey += ((red + blue + green)/3);
 	    	   grey += ((red + blue + green)/3)*sobel_kernal[4][i];
-		}
-		    
-		
-		    
+		} 
 
 		// accumulate
         /*

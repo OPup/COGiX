@@ -55,7 +55,7 @@ GPIO_1_CLKIN[1] => DE0_D5M:inst.GPIO_1_CLKIN[1]
 KEY[0] => DE0_D5M:inst.KEY[0]
 KEY[0] => ps2:inst6.iRST_n
 KEY[0] => vga_mouse_square:vga_mouse_catapult_inst.arst_n
-KEY[0] => mean_vga:inst11.arst_n
+KEY[0] => mean_vga:inst3.arst_n
 KEY[1] => DE0_D5M:inst.KEY[1]
 KEY[1] => ps2:inst6.iSTART
 KEY[2] => DE0_D5M:inst.KEY[2]
@@ -9851,7 +9851,7 @@ video_out_rsc_mgc_out_stdreg_d[28] <= reg_video_out_rsc_mgc_out_stdreg_d_tmp[8].
 video_out_rsc_mgc_out_stdreg_d[29] <= reg_video_out_rsc_mgc_out_stdreg_d_tmp[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP_DE0_CAMERA_MOUSE|mean_vga:inst11
+|TOP_DE0_CAMERA_MOUSE|mean_vga:inst3
 vin_rsc_z[0] => vin_rsc_z[0].IN1
 vin_rsc_z[1] => vin_rsc_z[1].IN1
 vin_rsc_z[2] => vin_rsc_z[2].IN1
@@ -10037,7 +10037,7 @@ en => en.IN1
 arst_n => arst_n.IN1
 
 
-|TOP_DE0_CAMERA_MOUSE|mean_vga:inst11|mgc_in_wire:vin_rsc_mgc_in_wire
+|TOP_DE0_CAMERA_MOUSE|mean_vga:inst3|mgc_in_wire:vin_rsc_mgc_in_wire
 d[0] <= z[0].DB_MAX_OUTPUT_PORT_TYPE
 d[1] <= z[1].DB_MAX_OUTPUT_PORT_TYPE
 d[2] <= z[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -10340,7 +10340,7 @@ z[148] => d[148].DATAIN
 z[149] => d[149].DATAIN
 
 
-|TOP_DE0_CAMERA_MOUSE|mean_vga:inst11|mgc_out_stdreg:vout_rsc_mgc_out_stdreg
+|TOP_DE0_CAMERA_MOUSE|mean_vga:inst3|mgc_out_stdreg:vout_rsc_mgc_out_stdreg
 d[0] => z[0].DATAIN
 d[1] => z[1].DATAIN
 d[2] => z[2].DATAIN
@@ -10403,7 +10403,7 @@ z[28] <= d[28].DB_MAX_OUTPUT_PORT_TYPE
 z[29] <= d[29].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP_DE0_CAMERA_MOUSE|mean_vga:inst11|mean_vga_core:mean_vga_core_inst
+|TOP_DE0_CAMERA_MOUSE|mean_vga:inst3|mean_vga_core:mean_vga_core_inst
 clk => clk.IN1
 en => en.IN1
 arst_n => arst_n.IN1
@@ -10589,7 +10589,7 @@ vout_rsc_mgc_out_stdreg_d[28] <= vout_rsc_mgc_out_stdreg_d[28]~reg0.DB_MAX_OUTPU
 vout_rsc_mgc_out_stdreg_d[29] <= vout_rsc_mgc_out_stdreg_d[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|TOP_DE0_CAMERA_MOUSE|mean_vga:inst11|mean_vga_core:mean_vga_core_inst|mean_vga_core_fsm:mean_vga_core_fsm_inst
+|TOP_DE0_CAMERA_MOUSE|mean_vga:inst3|mean_vga_core:mean_vga_core_inst|mean_vga_core_fsm:mean_vga_core_fsm_inst
 clk => state_var~1.DATAIN
 en => state_var.OUTPUTSELECT
 en => state_var.OUTPUTSELECT
