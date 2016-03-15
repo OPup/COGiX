@@ -1,0 +1,17 @@
+
+# Messages from "go new"
+
+Creating project directory '\\icnas3.cc.ic.ac.uk\oh1015\COGiX\provided_files\student_files_2015\prj2\quartus_proj\DE0_CAMERA_MOUSE\catapult_ip\greyscale\Catapult_1'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Saving project file '//icnas3.cc.ic.ac.uk/oh1015/COGiX/provided_files/student_files_2015/prj2/quartus_proj/DE0_CAMERA_MOUSE/catapult_ip/greyscale/Catapult_1.ccs'. (PRJ-5)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)

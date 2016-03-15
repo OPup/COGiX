@@ -56,11 +56,10 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
     // shifts pixels from KERNEL_WIDTH rows and keeps KERNEL_WIDTH columns (KERNEL_WIDTHxKERNEL_WIDTH pixels stored)
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,false>, KERNEL_WIDTH> regs;
     int i;
-    
     int j;
     int k;
     int sobel_kernal[KERNEL_WIDTH][KERNEL_WIDTH];
-    for(j = 0; j< KERNEL_WIDTH; j++){
+    for(j = 0; j < KERNEL_WIDTH; j++){
         for(k = 0; k < KERNEL_WIDTH; k++){
             sobel_kernal[j][k] = -1;
         }
@@ -86,8 +85,8 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 		ACC1: for(i = 0; i < KERNEL_WIDTH; i++){
 		    red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL));
             green = (regs[i].slc<COLOUR_WL>(COLOUR_WL));
-            blue = (regs[i].slc<COLOUR_WL>(0));		
-	        //grey += ((red + blue + green)/3);       
+            blue = (regs[i].slc<COLOUR_WL>(0));	
+	        //grey += ((red + blue + green)/3);
 	        grey += ((red + blue + green)/3)*sobel_kernal[0][i];
 	        
 	        red = (regs[i].slc<COLOUR_WL>(2*COLOUR_WL + PIXEL_WL));
@@ -154,6 +153,12 @@ void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_
 	    
 	    */ 
 	    
+	    if(grey > 1023){
+	        grey = 1023;
+	    }
+	    if(grey < 0){
+	        grey = 0;
+	    }
 		// group the RGB components into a single signal
 		vout[p] = ((((ac_int<PIXEL_WL, false>)grey) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)grey) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)grey);
    // }
